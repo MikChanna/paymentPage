@@ -1,14 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import AllPayees from "./pages/allPayees";
+
 
 function App() {
 
   return (
-    <div>  
-        <AllPayees/>
+    <Router>  
+        <Route exact path="/" component={AllPayees} />
       
-    </div>
+    </Router>
   );
 }
 
