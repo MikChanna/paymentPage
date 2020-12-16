@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css"
 
-function PayeeCard(){
+function PayeeCard(props){
+
 
     return (
         <div className="card">
             <div className="card-body">
-                <h5 className="card-title"> Card Title </h5>
+                <h5 className="card-title"> {props.payeeName} </h5>
                 <p className = "card-text"> Build card text here</p>
             </div>
             <ul className="list-group list-group-flush">
