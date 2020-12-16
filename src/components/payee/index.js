@@ -13,7 +13,8 @@ function Payee(props){
             <div className="card-body">
             <h5 className = "card-title">{props.name}</h5>
             <p className="card-text"> {props.address} {props.city}, {props.state} {props.country}, {props.zip}</p>
-            <Accordian/>
+            <Accordian
+            name={props.name}/>
             </div>
         </div>
     )

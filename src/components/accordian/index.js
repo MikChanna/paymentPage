@@ -1,21 +1,26 @@
 import React from "react";
 
 function Accordian(props){
+    let detailName = "#" + props.name;
+    let paymentName = props.name + "Two";
+    let paymentNameID = "#" + paymentName;
+    let remittanceName = props.name + "Three";
+    let remittanceNameID = "#" + remittanceName
 
     return(
-        <div className="accordian" id="accordionParent">
-            <div className = "accordian-item">
-                <h2 className = "accordian-title"> 
-                    <button className="accordian-button" 
+        <div className="accordion" id="accordionParent">
+            <div className = "accordion-item">
+                <h2 className = "accordion-title"> 
+                    <button className="accordion-button accordionBtn" 
                             type="button" 
                             data-bs-toggle="collapse" 
-                            data-bs-target="#collapseOne" 
+                            data-bs-target={detailName}
                             aria-expanded="false" 
-                            aria-controls="collapseOne">
-                        Payee Details
+                            aria-controls={props.name}>
+                        Details
                     </button>
                 </h2>
-                <div id="collapseOne" 
+                <div id={props.name} 
                     className="accordion-collapse collapse" 
                     aria-labelledby="headingOne"
                     data-bs-parent="#accordionParent">
@@ -24,18 +29,18 @@ function Accordian(props){
                     </div>
                 </div>
             </div>
-            <div className = "accordian-item">
-                <h2 className = "accordian-title"> 
-                    <button className="accordian-button" 
+            <div className = "accordion-item">
+                <h2 className = "accordion-title"> 
+                    <button className="accordion-button accordionBtn" 
                             type="button" 
                             data-bs-toggle="collapse" 
-                            data-bs-target="#collapseTwo" 
+                            data-bs-target={paymentNameID} 
                             aria-expanded="false" 
-                            aria-controls="collapseTwo">
+                            aria-controls={paymentName}>
                         Payment Details
                     </button>
                 </h2>
-                <div id="collapseTwo" 
+                <div id={paymentName} 
                     className="accordion-collapse collapse" 
                     aria-labelledby="headingTwo"
                     data-bs-parent="#accordionParent">
@@ -44,18 +49,18 @@ function Accordian(props){
                     </div>
                 </div>
             </div>
-            <div className = "accordian-item">
-                <h2 className = "accordian-title"> 
-                    <button className="accordian-button" 
+            <div className = "accordion-item">
+                <h2 className = "accordion-title"> 
+                    <button className="accordion-button accordionBtn" 
                             type="button" 
                             data-bs-toggle="collapse" 
-                            data-bs-target="#collapseThree" 
+                            data-bs-target={remittanceNameID} 
                             aria-expanded="false" 
-                            aria-controls="collapseThree">
+                            aria-controls={remittanceName}>
                         Remittance Details
                     </button>
                 </h2>
-                <div id="collapseThree" 
+                <div id={remittanceName} 
                     className="accordion-collapse collapse" 
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionParent">
