@@ -9,13 +9,21 @@ class AllPayees extends Component {
         payeeInfo
     }
 
+
     render(){
         return (
             <div>
                 <Header/>
                 {this.state.payeeInfo.map((payee) =>
                     <Payee
-                    name={payee.Payee.Name}/>
+                    key={payee.Payee.Name}
+                    name={payee.Payee.Name}
+                    address={payee.Payee.Address.Address1}
+                    city={payee.Payee.Address.City}
+                    state={payee.Payee.Address.StateOrProvince}
+                    country={payee.Payee.Address.Country}
+                    zip={payee.Payee.Address.PostalCode}
+                    />
                 )}
             
             </div>
