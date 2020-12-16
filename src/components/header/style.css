@@ -1,0 +1,15 @@
+.navbar {
+  display: block;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #e50d90, #1c3e75);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
