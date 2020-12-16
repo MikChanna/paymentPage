@@ -1,29 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import './App.css';
-import Header from "./components/header";
-import PayeeCard from "./components/payeeCard";
-import payeeInfo from "./payeeSample.json";
+import AllPayees from "./pages/allPayees";
 
-class App extends Component {
-  state = {
-    payeeInfo
-  }
+function App() {
 
-  render() {
   return (
-    <div>
-      <Header/>
-      {this.state.payeeInfo.map(payee => (
-        <PayeeCard
-          payeeName={payee.Payee.Name}
-          
-        />
-
-      ))}
+    <div>  
+        <AllPayees/>
       
     </div>
   );
-}
 }
 
 export default App;
