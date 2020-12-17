@@ -1,11 +1,13 @@
 import React from "react";
+import RemittanceCard from "../remittanceCard";
 
 function Accordian(props){
     let detailName = "#" + props.name;
     let paymentName = props.name + "Two";
     let paymentNameID = "#" + paymentName;
     let remittanceName = props.name + "Three";
-    let remittanceNameID = "#" + remittanceName
+    let remittanceNameID = "#" + remittanceName;
+    let payorName = props.PN;
 
     return(
         <div className="accordion" id="accordionParent">
@@ -70,7 +72,12 @@ function Accordian(props){
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionParent">
                     <div className="accordion-body">
-                        <p>Details</p>
+                    {payorName.map((item)=>
+                    
+                        <RemittanceCard
+                        payorName={item} />
+                    )}
+                    
                     </div>
                 </div>
             </div>

@@ -30,6 +30,10 @@ class AllPayees extends Component {
                     exp={payee.Payment.Exp}
                     fax= {payee.Payee.Fax}
                     phone={payee.Payee.Phone}
+                    PN={payee.Remittance.map((sub)=>
+                        sub.PayorName + " ")}
+                    PI={payee.Remittance.map((sub)=>
+                            sub.PayorId + " ")}
                     />
                 )}
             

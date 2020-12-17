@@ -21,7 +21,9 @@ function Payee(props){
             cvv={props.cvv}
             exp={props.exp}
             fax={props.fax}
-            phone={props.phone}/>
+            phone={props.phone}
+            PN={props.PN}
+                    />
             </div>
         </div>
     )
