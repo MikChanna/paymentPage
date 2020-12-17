@@ -23,6 +23,13 @@ class AllPayees extends Component {
                     state={payee.Payee.Address.StateOrProvince}
                     country={payee.Payee.Address.Country}
                     zip={payee.Payee.Address.PostalCode}
+                    attention={payee.Payee.Attention}
+                    submissionDate= {payee.Payee.SubmissionDate}
+                    pan={payee.Payment.PAN}
+                    cvv={payee.Payment.CVV}
+                    exp={payee.Payment.Exp}
+                    fax= {payee.Payee.Fax}
+                    phone={payee.Payee.Phone}
                     />
                 )}
             

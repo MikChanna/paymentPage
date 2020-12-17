@@ -25,7 +25,10 @@ function Accordian(props){
                     aria-labelledby="headingOne"
                     data-bs-parent="#accordionParent">
                     <div className="accordion-body">
-                        <p>Details</p>
+                        <p>Attention: {props.attention}</p>
+                        <p>Submission Date: {props.submissionDate} </p>
+                        <p>Phone Number: {props.phone} </p>
+                        <p>Fax Number: {props.fax} </p>
                     </div>
                 </div>
             </div>
@@ -45,7 +48,9 @@ function Accordian(props){
                     aria-labelledby="headingTwo"
                     data-bs-parent="#accordionParent">
                     <div className="accordion-body">
-                        <p>Details</p>
+                        <p>PAN: {props.pan} </p>
+                        <p>CVV: {props.cvv} </p>
+                        <p>Exp: {props.exp} </p>
                     </div>
                 </div>
             </div>
