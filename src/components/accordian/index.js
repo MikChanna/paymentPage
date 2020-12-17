@@ -1,5 +1,6 @@
 import React from "react";
 import RemittanceCard from "../remittanceCard";
+import "./style.css";
 
 function Accordian(props){
     let detailName = "#" + props.name;
@@ -13,7 +14,7 @@ function Accordian(props){
         <div className="accordion" id="accordionParent">
             <div className = "accordion-item">
                 <h2 className = "accordion-title"> 
-                    <button className="accordion-button accordionBtn" 
+                    <button className="accordion-button collapsed" 
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target={detailName}
@@ -36,7 +37,7 @@ function Accordian(props){
             </div>
             <div className = "accordion-item">
                 <h2 className = "accordion-title"> 
-                    <button className="accordion-button accordionBtn" 
+                    <button className="accordion-button collapsed" 
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target={paymentNameID} 
@@ -58,7 +59,7 @@ function Accordian(props){
             </div>
             <div className = "accordion-item">
                 <h2 className = "accordion-title"> 
-                    <button className="accordion-button accordionBtn" 
+                    <button className="accordion-button collapsed" 
                             type="button" 
                             data-bs-toggle="collapse" 
                             data-bs-target={remittanceNameID} 

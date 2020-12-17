@@ -7,7 +7,7 @@ return (
 
    <nav className= "navbar navbar-light bg-light">
        <div className = "container-fluid"> 
-            <h1>Paymerang</h1>
+            <h1>paymerang</h1>
        </div>
    </nav>
 

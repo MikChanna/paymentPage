@@ -1,0 +1,8 @@
+.card-header {
+  background-image: linear-gradient(45deg, #4b0583, #e50d90);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+}
