@@ -22,7 +22,12 @@ function Payee(props){
             exp={props.exp}
             fax={props.fax}
             phone={props.phone}
+            remittance={props.remittance}
             PN={props.PN}
+            PI={props.PI}
+            invoice={props.invoice}
+            description={props.Description}
+            amount={props.Amount}
                     />
             </div>
         </div>

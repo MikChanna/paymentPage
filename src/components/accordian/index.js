@@ -7,7 +7,7 @@ function Accordian(props){
     let paymentNameID = "#" + paymentName;
     let remittanceName = props.name + "Three";
     let remittanceNameID = "#" + remittanceName;
-    let payorName = props.PN;
+    let remittance = props.remittance;
 
     return(
         <div className="accordion" id="accordionParent">
@@ -72,10 +72,13 @@ function Accordian(props){
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionParent">
                     <div className="accordion-body">
-                    {payorName.map((item)=>
-                    
+                    {remittance.map((item)=>
                         <RemittanceCard
-                        payorName={item} />
+                        payorName={item.PayorName}
+                        payorId = {item.PayorId}
+                        invoice = {item.InvoiceNo}
+                        description = {item.Description}
+                        amount={item.Amount} />
                     )}
                     
                     </div>
