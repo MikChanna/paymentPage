@@ -1,4 +1,4 @@
-# PaymentPage - CodingChallenge
+# PaymentPage 
 
 
 **## Description**
