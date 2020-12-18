@@ -7,12 +7,12 @@ This is a webpage built with React.js and Bootstrap.  The webpage displays vendo
 
 Screenshot
 
+<img width="1105" alt="Screen Shot 2020-12-18 at 1 02 55 PM" src="https://user-images.githubusercontent.com/61893686/102646424-0308a300-4132-11eb-8404-95eabfc1cd4e.png">
 
 
 
 
-
-Page can be viewed at the link below
+Page can be viewed at the link at: 
 https://mikchanna.github.io/paymentPage/ 
 
 
